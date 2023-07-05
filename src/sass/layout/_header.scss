@@ -1,0 +1,9 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 1440px) {
+        padding-top: 23px;
+        padding-bottom: 26px;
+    }
+}
