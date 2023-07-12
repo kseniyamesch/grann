@@ -15,11 +15,17 @@
 }
 
 .nav-list {
+  display: none;
+
+@media screen and (min-width: 768px) {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   width: 288px;
+}
+
+
 }
 
 .nav-link {
