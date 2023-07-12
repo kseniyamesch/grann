@@ -1,9 +1,30 @@
 .header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-    @media screen and (min-width: 1440px) {
-        padding-top: 23px;
-        padding-bottom: 26px;
-    }
+  @media screen and (min-width: 1440px) {
+    padding-top: 23px;
+    padding-bottom: 26px;
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 288px;
+}
+
+.nav-link {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
