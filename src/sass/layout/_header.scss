@@ -2,16 +2,37 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media screen and (min-width: 1440px) {
-    padding-top: 23px;
-    padding-bottom: 26px;
+  padding-top: 47px;
+  padding-bottom: 35px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
+
+  position: relative;
+
+  // @media screen and (min-width: 1440px) {
+  //   padding-top: 23px;
+  //   padding-bottom: 26px;
+  // }
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+  @media screen and (max-width: 767px) {
+    justify-content: flex-end;
+  }
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .nav-list {
@@ -22,15 +43,61 @@
   align-items: center;
   justify-content: space-between;
 
+  width: 220px;
+}
+
+@media screen and (min-width: 1440px) {
   width: 288px;
 }
-
-
 }
+
+.nav-right{
+  display: flex;
+  align-items: center;
+  }
 
 .nav-link {
   text-align: center;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.header-btn {
+  border: none;
+  background-color: transparent;
+  width: 42px;
+  height: 37px;
+}
+
+.burger-btn {
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+}
+
+.shopping-btn {
+  margin-left: 21px;
+
+  @media screen and (min-width: 1440px) {
+    margin-left: 76px;
+  }
+
+  
+}
+
+.burger-icon {
+  width: 32px;
+  height: 17px;
+}
+
+.shopping-icon {
+  width: 30px;
+  height: 30px;
 }
