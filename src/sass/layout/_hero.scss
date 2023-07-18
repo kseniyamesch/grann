@@ -6,6 +6,7 @@
         padding-top: 99px;
         padding-bottom: 238px;
     }
+
 }
 
 .hero-title {
@@ -39,6 +40,13 @@
     letter-spacing: 0.48px;
   }
 
+}
+
+.hero-left {
+    height: 340px;
+
+    background-image: url('./../images/phone/hero.png');
+    background-repeat: no-repeat;
 }
 
 .social-item {
