@@ -1,11 +1,13 @@
 .hero-section {
-    padding-top: 75px;
-    padding-bottom: 100px;
+  position: relative;
 
-    @media screen and (min-width: 1440px) {
-        padding-top: 99px;
-        padding-bottom: 238px;
-    }
+  padding-top: 75px;
+  padding-bottom: 100px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 99px;
+    padding-bottom: 238px;
+  }
 }
 
 .hero-title {
@@ -18,7 +20,9 @@
   }
 
   @media screen and (min-width: 1440px) {
-    font-size: 120px;
+    text-align: right;
+    padding-right: 331px;
+    font-size: 150px;
   }
 }
 
@@ -37,16 +41,98 @@
   @media screen and (min-width: 1440px) {
     font-size: 24px;
     letter-spacing: 0.48px;
+    padding-right: 331px;
+    text-align: right;
+  }
+}
+
+.hero-content {
+  @media screen and (max-width: 767px) {
+    margin-top: 27px;
+    height: 340px;
+    background-image: url('./../images/phone/hero.png');
   }
 
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    background-image: url('./../images/desktop/hero.png');
+    height: 430px;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: -70px;
+    height: 521px;
+  }
+
+  width: auto;
+  background-repeat: no-repeat;
 }
+
+// .hero-left {
+//   @media screen and (max-width: 767px) {
+//     height: 340px;
+//     width: 298px;
+//     background-size: cover;
+//     background-image: url('./../images/phone/hero.png');
+//   }
+
+//   background-repeat: no-repeat;
+// }
 
 .social-item {
   &:not(:last-child) {
     margin-bottom: 20px;
   }
 }
+
+.social-list {
+  width: 24px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    padding-top: 190px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 190px;
+    padding-right: 100px;
+  }
+}
+
 .social-icon {
   width: 24px;
   height: 24px;
+}
+
+.hero-btn {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 355px;
+  padding: 23px 38px;
+  border-radius: 10px;
+  background: #f5eee0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  left: 0;
+  right: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 394px;
+    height: 67px;
+    top: 65%;
+    transform: translateY(50%);
+  }
+
+  @media screen and (min-width: 1440px) {
+    bottom: 140px;
+    transform: translateY(-50%);
+  }
 }
