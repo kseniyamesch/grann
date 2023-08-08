@@ -1,3 +1,11 @@
+.catalog-container {
+  padding-bottom: 133px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 153px;
+  }
+}
+
 .catalog-list {
     @media screen and (min-width: 768px) {
         display: flex;
