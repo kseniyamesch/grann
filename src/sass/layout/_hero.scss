@@ -69,17 +69,6 @@
   background-repeat: no-repeat;
 }
 
-// .hero-left {
-//   @media screen and (max-width: 767px) {
-//     height: 340px;
-//     width: 298px;
-//     background-size: cover;
-//     background-image: url('./../images/phone/hero.png');
-//   }
-
-//   background-repeat: no-repeat;
-// }
-
 .social-item {
   &:not(:last-child) {
     margin-bottom: 20px;

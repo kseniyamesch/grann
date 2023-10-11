@@ -1,4 +1,6 @@
 .instagram-collection {
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(393px, 1fr));
   gap: 20px;

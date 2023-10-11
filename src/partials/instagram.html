@@ -2,8 +2,8 @@
   <div class="container">
     <div class="instagram-wrapper">
       <h2 class="instagram-title">Instagram</h2>
-      <ul class="instagram-collection">
-        <li class="instagram-item">
+      <ul class="instagram-collection" data-target="carousel">
+        <li class="instagram-item" data-target="card">
           <picture>
             <source
               srcset="
@@ -28,7 +28,7 @@
             />
           </picture>
         </li>
-        <li class="instagram-item">
+        <li class="instagram-item" data-target="card">
           <picture>
             <source
               srcset="
@@ -55,7 +55,7 @@
             />
           </picture>
         </li>
-        <li class="instagram-item">
+        <li class="instagram-item" data-target="card">
           <picture>
             <source
               srcset="
@@ -81,7 +81,7 @@
             />
           </picture>
         </li>
-        <li class="instagram-item">
+        <li class="instagram-item" data-target="card">
           <picture>
             <source
               srcset="
@@ -107,7 +107,7 @@
             />
           </picture>
         </li>
-        <li class="instagram-item">
+        <li class="instagram-item" data-target="card">
           <picture>
             <source
               srcset="
@@ -134,7 +134,7 @@
             />
           </picture>
         </li>
-        <li class="instagram-item">
+        <li class="instagram-item" data-target="card">
           <picture>
             <source
               srcset="
@@ -162,13 +162,13 @@
         </li>
       </ul>
       <div class="pagination-wrapper">
-        <button class="pagination-btn">
+        <button class="pagination-btn" type="button" data-action="slideLeft">
           <svg class="pagination-svg">
             <use href="./images/sprite.svg#icon-Arrow-3"></use>
           </svg>
         </button>
-        <nav class="pagination-nav">
-          <a href="#" class="pagination-link"
+        <nav class="pagination-nav" data-target="pagination">
+          <a href="#" class="pagination-link" data-target="dot"
             ><svg class="pagination-svg-ellipse">
               <use
                 href="./images/sprite.svg#icon-Ellipse-16"
@@ -177,7 +177,7 @@
               ></use>
             </svg>
           </a>
-          <a href="#" class="pagination-link"
+          <a href="#" class="pagination-link" data-target="dot"
             ><svg class="pagination-svg-ellipse">
               <use
                 href="./images/sprite.svg#icon-Ellipse-16"
@@ -186,7 +186,7 @@
               ></use>
             </svg>
           </a>
-          <a href="#" class="pagination-link"
+          <a href="#" class="pagination-link" data-target="dot"
             ><svg class="pagination-svg-ellipse">
               <use
                 href="./images/sprite.svg#icon-Ellipse-16"
@@ -195,7 +195,25 @@
               ></use>
             </svg>
           </a>
-          <a href="#" class="pagination-link"
+          <a href="#" class="pagination-link" data-target="dot"
+            ><svg class="pagination-svg-ellipse">
+              <use
+                href="./images/sprite.svg#icon-Ellipse-16"
+                width="11"
+                height="11"
+              ></use>
+            </svg>
+          </a>
+          <a href="#" class="pagination-link" data-target="dot"
+            ><svg class="pagination-svg-ellipse">
+              <use
+                href="./images/sprite.svg#icon-Ellipse-16"
+                width="11"
+                height="11"
+              ></use>
+            </svg>
+          </a>
+          <a href="#" class="pagination-link" data-target="dot"
             ><svg class="pagination-svg-ellipse">
               <use
                 href="./images/sprite.svg#icon-Ellipse-16"
@@ -205,8 +223,7 @@
             </svg>
           </a>
         </nav>
-
-        <button class="pagination-btn">
+        <button class="pagination-btn" type="button" data-action="slideRight">
           <svg class="pagination-svg">
             <use href="./images/sprite.svg#icon-Arrow-2"></use>
           </svg>
